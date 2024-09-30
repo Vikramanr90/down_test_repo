@@ -16,9 +16,12 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
-- task: DownloadPipelineArtifact@2
-  inputs:
-    buildType: 'current'
-    pipeline: build_from_maven_build
-    artifactName: 'maven_build_artifact'
-    targetPath: '/home/adoagentuser/adoagent/_work/4-vikram'
+#- task: DownloadPipelineArtifact@2
+#  inputs:
+#    buildType: 'current'
+#    pipeline: build_from_maven_build
+#    artifactName: 'maven_build_artifact'
+#    targetPath: '/home/adoagentuser/adoagent/_work/4-vikram'
+
+- download: build_from_maven_build
+  artifact: 'maven_build_artifact' 
