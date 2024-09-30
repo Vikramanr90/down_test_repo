@@ -5,7 +5,7 @@ resources:
      trigger: true
 
 pool:
-  vmImage: ubuntu-latest
+  name: vikram-first-self-agent-pool
 
 steps:
 - script: echo Hello, world!
