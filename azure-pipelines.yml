@@ -1,6 +1,6 @@
 resources:
  pipelines:
-   - pipeline: build_from_maven_build
+   - pipeline: 'build_from_maven_build'
      source: 'Vikramanr90.adorepo'
      trigger: true
 
